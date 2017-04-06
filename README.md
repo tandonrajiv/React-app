@@ -11,7 +11,7 @@ To run the app locally:
 
 ```bash
 git clone https://github.com/tandonrajiv/React-app.git
-cd react-example
+cd React-app
 npm install --save
 npm run setup
 npm run dev
