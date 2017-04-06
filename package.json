@@ -1,41 +1,38 @@
 {
   "name": "react-example",
   "version": "1.0.0",
-  "description": "Interview task",
+  "description": "Simple React example app",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --inline --content-base ./ --env.dev",
     "build": "webpack --env.prod",
-    "lint": "eslint app test",
     "test": "cross-env NODE_ENV=test nyc mocha",
     "watch:test": "mocha --watch --compilers js:babel-register",
     "start": "http-server",
     "setup": "npm install && npm run validate",
-    "validate": "npm-run-all lint test build"
+    "validate": "npm-run-all test build"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tandonrajiv/React-app"
+    "url": "https://github.com/mzabriskie/react-example"
   },
-  "author": "Rajiv Tandon",
+  "author": "Matt Zabriskie",
   "license": "MIT",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/mzabriskie/react-example/issues"
   },
-  "homepage": "https://github.com/tandonrajiv/React-app",
+  "homepage": "https://github.com/mzabriskie/react-example",
   "dependencies": {
     "axios": "0.13.1",
     "bootstrap": "^3.3.5",
+    "cookie": "^0.3.1",
     "history": "^3.0.0",
     "moment": "^2.10.6",
     "react": "15.3.0",
-    "react-bootstrap": "^0.30.8",
     "react-bootstrap-table": "^3.1.6",
     "react-cookie": "^1.0.5",
     "react-dom": "15.3.0",
-    "react-pstate": "0.0.4",
     "react-router": "2.6.1",
-    "react-search-input": "^0.10.4",
     "react-tooltip": "3.1.5"
   },
   "devDependencies": {
@@ -51,8 +48,6 @@
     "cross-env": "2.0.0",
     "css-loader": "0.23.1",
     "enzyme": "2.4.1",
-    "eslint": "3.2.2",
-    "eslint-config-kentcdodds": "^9.0.2",
     "file-loader": "0.9.0",
     "http-server": "0.9.0",
     "jsdom": "9.4.1",
